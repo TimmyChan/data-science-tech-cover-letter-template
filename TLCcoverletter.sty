@@ -1,0 +1,42 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{TLCcoverletter}[12/27/21 cover letter package]
+% Author: Timmy Chan
+
+% Assuming using "article" document class and letter sized paper.
+% FONT STUFF
+
+\RequirePackage[T1]{fontenc} %  Font encoding https://texfaq.org/FAQ-why-inp-font
+\RequirePackage[default,semibold]{sourcesanspro}
+\RequirePackage[12pt]{moresize}
+\usepackage{anyfontsize}
+\RequirePackage{csquotes}
+
+% MARGINS AND SPACING
+\RequirePackage[margin=.5in]{geometry} % Set Margins
+\setlength{\parskip}{1em}
+%\setlength{\parindent}{1in}
+
+% COLOR
+\RequirePackage{xcolor}
+\definecolor{highlight}{RGB}{61, 90, 128} % CHANGE THIS TO YOUR FAV COLOR https://g.co/kgs/aoqdi7
+
+% LINKS
+\RequirePackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=highlight}
+
+
+% BOLD COMMAND
+\newcommand{\bold}[1]{ {\bfseries #1}}
+
+% NO PAGE NUMBER
+\pagenumbering{gobble}
+
+% SUBFILES IMPORTING
+\RequirePackage{standalone}
+\RequirePackage{import}
+
+
+% FOR TEMPLATE FILLER
+\RequirePackage[english]{babel}
+\RequirePackage{blindtext}% Filler Text
+

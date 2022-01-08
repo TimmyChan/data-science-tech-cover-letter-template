@@ -1,0 +1,69 @@
+\documentclass[11pt,letter]{letter}
+\usepackage[utf8]{inputenc}
+
+%====================
+% File:         cover_letter.tex
+% Editor:       https://github.com/TimmyChan 
+%               https://www.linkedin.com/in/timmy-l-chan/
+% Last Updated: Jan 7th, 2022
+%
+% Notes:        Created to serve as form letter for creation of many letters.
+%               All formatting is done in TLCcoverletter.sty and _header.tex
+%               No need to touch those files. 
+%               All actual content is in the sections/ folder.
+%====================
+
+
+\usepackage{TLCcoverletter}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\def\name{First Last} % Name Here
+\signature{\name}
+\address{1234 Street Ave., \\
+Unit \#777 \\ 
+City, State \\
+00000}
+\def\phone{(xxx) xxx-xxxx}
+\def\email{email@email.com}
+\def\LinkedIn{timmy-l-chan} % linkedin.com/in/______
+\def\github{TimmyChan} % github username
+\def\role{Data Scientist} % JOB TITLE
+
+%====================
+% Company Info
+%====================
+\def\hm{Jane Doe} % Hiring Manager Name, leave empty if unknown
+\def\position{Senior Data Scientist} % position
+\def\company{Big Data} % company
+\def\source{on LinkedIn} % where was the posting found, "I found ____ "
+
+% FULL SENTENCES
+\def\companynews{I understand that \company\;was included in a "Best of Tech" list, and got a new influx of investor funding as a result.}
+
+
+
+
+
+%==================
+\input{_header} % Header
+
+\begin{document}
+%\thispagestyle{fancy}
+
+\begin{letter}{\hm \\ Hiring Manager \\ Big Data, Inc. \\ Address line 1 \\ Address line 2  }
+
+\opening{Dear \hm,}
+% Change \hm to "hiring manager" or equivalent in company if unknown
+
+\setlength\parindent{.5in}
+\input{sections/opening}
+\input{sections/second}
+\input{sections/closing}
+\input{sections/signoff} 
+
+\closing{Sincerely,}
+\end{letter}
+
+\end{document}
