@@ -5,6 +5,8 @@ Link: https://www.overleaf.com/latex/templates/data-science-tech-cover-letter-te
 Created to serve as form letter for creation of many letters, as a complement to data-science-tech-resume-template:
 https://www.overleaf.com/latex/templates/data-science-tech-resume-template/zcdmpfxrzjhv
 
+![cover](https://github.com/TimmyChan/data-science-tech-cover-letter-template/blob/main/data_science_tech_cover_letter_template1024_1.png?raw=true)
+
 ### Files:
 - cover_letter.tex: Main file
 - _header.tex: header code
